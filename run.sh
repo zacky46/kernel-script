@@ -32,10 +32,9 @@ export KBUILD_BUILD_USER="zacky"
 export KBUILD_BUILD_HOST="miui-reborn-team"
 export LD=ld.lld
 DATE=$(TZ=Asia/Jakarta date +"%Y%m%d_%H%M")
-DATE2=$(TZ=Asia/Jakarta date +"%Y%m%d")
 AK3_DIR=$KERNEL_DIR/ak3-$DEVICE
 KERNEL_IMG=$KERNEL_DIR/out/arch/arm64/boot/Image.gz
-ZIP_NAME="$KERNEL_NAME"_"$DEVICE"-"$DATE"-"$CONFIGVERSION"-"$DATE2".zip
+ZIP_NAME="$KERNEL_NAME"_"$DEVICE"-"$DATE"-"$CONFIGVERSION"-kernelsu.zip
 
 # Setup toolchain
 if [[ "$*" =~ "clang" ]]; then
