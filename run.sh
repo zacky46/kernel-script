@@ -7,7 +7,7 @@ KERNEL_DIR=$PWD
 BUILD_START=$(date +"%s")
 
 # Name and version of kernel
-KERNEL_NAME="GarapanBerkah"
+KERNEL_NAME="MRT"
 
 # Device name
 DEVICE="lavender"
@@ -30,9 +30,12 @@ export ARCH=arm64
 export SUBARCH=arm64
 export KBUILD_BUILD_USER="zacky"
 export KBUILD_BUILD_HOST="miui-reborn-team"
+export LD=ld.lld
+DATE=$(TZ=Asia/Jakarta date +"%Y%m%d_%H%M")
+DATE2=$(TZ=Asia/Jakarta date +"%Y%m%d")
 AK3_DIR=$KERNEL_DIR/ak3-$DEVICE
 KERNEL_IMG=$KERNEL_DIR/out/arch/arm64/boot/Image.gz
-ZIP_NAME="$KERNEL_NAME"_"$DEVICE"-"$CONFIGVERSION".zip
+ZIP_NAME="$KERNEL_NAME"_"$DEVICE"-"$DATE"-"$CONFIGVERSION"-"$DATE2".zip
 
 # Setup toolchain
 if [[ "$*" =~ "clang" ]]; then
