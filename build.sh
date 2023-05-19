@@ -8,7 +8,6 @@ BUILD_START=$(date +"%s")
 
 # Name and version of kernel
 KERNEL_NAME="GarapanBerkah"
-KERNEL_VERSION="v1"
 
 # Device name
 DEVICE="lavender"
@@ -33,7 +32,7 @@ export KBUILD_BUILD_USER="zacky"
 export KBUILD_BUILD_HOST="miui-reborn-team"
 AK3_DIR=$KERNEL_DIR/ak3-$DEVICE
 KERNEL_IMG=$KERNEL_DIR/out/arch/arm64/boot/Image.gz
-ZIP_NAME="$KERNEL_NAME"_"$DEVICE"_"$CONFIGVERSION".zip
+ZIP_NAME="$KERNEL_NAME"_"$DEVICE"-"$CONFIGVERSION".zip
 
 # Setup toolchain
 if [[ "$*" =~ "clang" ]]; then
