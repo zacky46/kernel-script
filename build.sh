@@ -24,11 +24,6 @@ elif [[ "$*" =~ "qtihaptics" ]]; then
     CONFIGVERSION="qtihaptics"
 fi
 
-# Export localversion for OC variant
-if [[ "$*" =~ "oc" ]]; then
-    export LOCALVERSION="$KERNEL_VERSION-OC"
-fi
-
 # Setup environtment
 export CHAT_ID
 export BOT_TOKEN

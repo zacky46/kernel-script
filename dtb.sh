@@ -6,7 +6,7 @@
 KERNEL_DIR=$PWD
 
 # Device name
-DEVICE="whyred"
+DEVICE="lavender"
 
 # Setup environtment
 export ARCH=arm64
@@ -69,8 +69,6 @@ elif [[ "$*" =~ "qti" ]]; then
     cp -r out/arch/arm64/boot/dts/qcom/sdm636-*.dtb "$AK3_DIR"/dtbs/qti/
     cp -r out/arch/arm64/boot/dts/qcom/sdm660-*.dtb "$AK3_DIR"/dtbs/qti/
 fi
-
-cp -r out/arch/arm64/boot/dtbo.img "AK3_DIR"/kernel
 
 rm -rf out/arch/arm64/boot/
 rm -rf out/.version
