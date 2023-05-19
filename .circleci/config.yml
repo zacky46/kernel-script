@@ -15,8 +15,8 @@ jobs:
             git apply qti.patch
             bash dtb.sh lavender clang qti
             git restore .
-            wget https://raw.githubusercontent.com/zacky46/kernel-script/main/build.sh
-            bash build.sh lavender newcam clang
-            bash build.sh lavender oldcam clang
+            wget https://raw.githubusercontent.com/zacky46/kernel-script/main/run.sh
+            bash run.sh lavender newcam clang
+            bash run.sh lavender oldcam clang
             wget https://raw.githubusercontent.com/zacky46/kernel-script/main/final.sh
             bash final.sh clang
