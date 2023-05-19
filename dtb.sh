@@ -70,5 +70,7 @@ elif [[ "$*" =~ "qti" ]]; then
     cp -r out/arch/arm64/boot/dts/qcom/sdm660-*.dtb "$AK3_DIR"/dtbs/qti/
 fi
 
+cp -r out/arch/arm64/boot/dtbo.img "AK3_DIR"/kernel
+
 rm -rf out/arch/arm64/boot/
 rm -rf out/.version
