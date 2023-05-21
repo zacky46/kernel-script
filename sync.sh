@@ -2,7 +2,7 @@
 
 # Clone kernel source
 if [[ "$*" =~ "stable" ]]; then
-    git clone --depth=1 $zacky/kernel.git -b 13-ksu kernel
+    git clone --depth=1 $zacky/kernel.git -b kernelsu kernel
     cd kernel || exit
 fi
 
