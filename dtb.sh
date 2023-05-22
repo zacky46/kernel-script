@@ -6,7 +6,7 @@
 KERNEL_DIR=$PWD
 
 # Device name
-DEVICE="lavender"
+DEVICE="whyred"
 
 # Setup environtment
 export ARCH=arm64

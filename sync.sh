@@ -15,7 +15,7 @@ elif [[ "$*" =~ "gcc" ]]; then
 fi
 
 # Clone anykernel3
-git clone --depth=1 $zacky/anykernel.git -b lavender-dtb ak3-lavender
+git clone --depth=1 $zacky/anykernel.git -b whyred-dtb ak3-whyred
 
 # Telegram setup
 push_message() {

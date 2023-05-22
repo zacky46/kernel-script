@@ -10,7 +10,7 @@ BUILD_START=$(date +"%s")
 KERNEL_NAME="MRT"
 
 # Device name
-DEVICE="lavender"
+DEVICE="whyred"
 
 # Blob version
 if [[ "$*" =~ "newcam" ]]; then
