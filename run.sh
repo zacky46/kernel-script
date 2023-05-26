@@ -7,7 +7,7 @@ KERNEL_DIR=$PWD
 BUILD_START=$(date +"%s")
 
 # Name and version of kernel
-KERNEL_NAME="MRT"
+KERNEL_NAME="HaruanGaming"
 
 # Device name
 DEVICE="ginkgo"
@@ -28,13 +28,12 @@ export CHAT_ID
 export BOT_TOKEN
 export ARCH=arm64
 export SUBARCH=arm64
-export KBUILD_BUILD_USER="zacky"
-export KBUILD_BUILD_HOST="miui-reborn-team"
-export LD=ld.lld
+export KBUILD_BUILD_USER="haruan"
+export KBUILD_BUILD_HOST="gaming"
 DATE=$(TZ=Asia/Jakarta date +"%Y%m%d_%H%M")
 AK3_DIR=$KERNEL_DIR/ak3-$DEVICE
 KERNEL_IMG=$KERNEL_DIR/out/arch/arm64/boot/Image.gz
-ZIP_NAME="$KERNEL_NAME"_"$DEVICE"-"$DATE"-"$CONFIGVERSION"-kernelsu.zip
+ZIP_NAME="$KERNEL_NAME"_"$DEVICE"-"$DATE"-"$CONFIGVERSION"-v6969696969.zip
 
 # Setup toolchain
 if [[ "$*" =~ "clang" ]]; then

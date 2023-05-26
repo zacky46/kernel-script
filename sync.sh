@@ -8,7 +8,7 @@ fi
 
 # Clone toolchain
 if [[ "$*" =~ "clang" ]]; then
-    git clone --depth=1 -b 17 https://gitlab.com/varunhardgamer/trb_clang clang
+    git clone --depth=1 https://gitlab.com/anandhan07/aosp-clang -b 17 clang
 elif [[ "$*" =~ "gcc" ]]; then
     git clone --depth=1 https://github.com/avinakefin/GCC-12-arm32 arm32
     git clone --depth=1 https://github.com/avinakefin/GCC-12-aarch64 arm64
