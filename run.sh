@@ -30,6 +30,7 @@ export ARCH=arm64
 export SUBARCH=arm64
 export KBUILD_BUILD_USER="haruan"
 export KBUILD_BUILD_HOST="gaming"
+export LD=ld.lld
 DATE=$(TZ=Asia/Jakarta date +"%Y%m%d_%H%M")
 AK3_DIR=$KERNEL_DIR/ak3-$DEVICE
 KERNEL_IMG=$KERNEL_DIR/out/arch/arm64/boot/Image.gz
