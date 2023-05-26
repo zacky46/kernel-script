@@ -10,5 +10,7 @@ jobs:
             wget https://raw.githubusercontent.com/zacky46/kernel-script/ginkgo/sync.sh
             bash sync.sh stable clang
             cd kernel
+            wget https://raw.githubusercontent.com/zacky46/kernel-script/ginkgo/run.sh
+            bash run.sh ginkgo clang            
             wget https://raw.githubusercontent.com/zacky46/kernel-script/ginkgo/final.sh
             bash final.sh clang
