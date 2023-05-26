@@ -72,7 +72,7 @@ push_document() {
 }
 
 # Export defconfig
-make O=out super-"$DEVICE"-"$CONFIGVERSION"_defconfig
+make O=out vendor/"$DEVICE"-perf_defconfig
 
 # Enable QTI haptics for all build
 scripts/config --file out/.config -e CONFIG_INPUT_QTI_HAPTICS
