@@ -32,7 +32,8 @@ export KBUILD_BUILD_USER="haruan"
 export KBUILD_BUILD_HOST="gaming"
 DATE=$(TZ=Asia/Jakarta date +"%Y%m%d_%H%M")
 AK3_DIR=$KERNEL_DIR/ak3-$DEVICE
-KERNEL_IMG=$KERNEL_DIR/out/arch/arm64/boot/Image.gz
+KERNEL_IMG=$KERNEL_DIR/out/arch/arm64/boot/Image.gz-dtb
+DTBO_IMG=$KERNEL_DIR/out/arch/arm64/boot/dtbo.img
 ZIP_NAME="$KERNEL_NAME"_"$DEVICE"-"$DATE"-"$CONFIGVERSION"-v6969696969.zip
 
 # Setup toolchain
@@ -102,7 +103,8 @@ if ! [ -a "$KERNEL_IMG" ]; then
 fi
 
 # Make zip
-cp -r "$KERNEL_IMG" "$AK3_DIR"/kernel/
+cp -r "$KERNEL_IMG" "$AK3_DIR"
+cp -r "$DTBO_IMG" "$AK3_DIR"
 cd "$AK3_DIR" || exit
 zip -r9 "$ZIP_NAME" ./*
 cd "$KERNEL_DIR" || exit
