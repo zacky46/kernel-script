@@ -20,4 +20,3 @@ jobs:
             bash run.sh lavender oldcam clang
             wget https://raw.githubusercontent.com/zacky46/kernel-script/main/final.sh
             bash final.sh clang
-            
