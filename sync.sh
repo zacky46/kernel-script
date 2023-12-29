@@ -2,7 +2,7 @@
 
 # Clone kernel source
 if [[ "$*" =~ "stable" ]]; then
-    git clone --depth=1 $zacky/kernel.git -b asu kernel
+    git clone --depth=1 https://github.com/denialinden/android_kernel_xiaomi_ginkgo -b Fourteen
     cd kernel || exit
 fi
 
@@ -15,7 +15,7 @@ elif [[ "$*" =~ "gcc" ]]; then
 fi
 
 # Clone anykernel3
-git clone --depth=1 $zacky/anykernel.git -b lavender-dtb ak3-lavender
+git clone --depth=1 https://github.com/Ariden24/AnyKernel3 -b master
 
 # Telegram setup
 push_message() {
