@@ -122,3 +122,4 @@ push_document "$AK3_DIR/$ZIP_NAME" "
 rm -rf out/arch/arm64/boot/
 rm -rf out/.version
 rm -rf "$AK3_DIR"/*.zip
+# run
