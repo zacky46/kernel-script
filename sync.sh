@@ -34,3 +34,4 @@ push_message "
 <b>Linux Version :</b> <code>$(make kernelversion | cut -d " " -f5 | tr -d '\n')</code>
 <b>Source Branch :</b> <code>$(git rev-parse --abbrev-ref HEAD)</code>
 <b>======================================</b> "
+
