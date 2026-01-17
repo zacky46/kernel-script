@@ -6,7 +6,7 @@
 KERNEL_DIR=$PWD
 
 # Device name
-DEVICE="lavender"
+DEVICE="ginkgo"
 
 # Setup environtment
 export ARCH=arm64
